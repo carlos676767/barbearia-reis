@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100;200;300;400;500;600;700;800;900&family=REM:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap');
+*{
+    font-family: 'Roboto Slab', serif;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-image: url('imagens/barberia do reis.png');
+    background-color: black;
+    background-position: center 5%; /* Posiciona o centro da imagem 5% acima do centro vertical */
+    background-repeat: no-repeat;
+    background-size: contain; /* Tamanho da imagem será ajustado para caber na tela */
+    background-size: 15%;
+}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  
+
+
+a{
+    color: var(--cor-3-3);
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    background-color: transparent;
+    height: 4.6875rem; /* Add a unit like 'rem' or 'px' here */
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.menu a{
+    display: block;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    position: relative;
+
+}
+.menu a::after {
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: yellow;
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.menu a:hover::after{
+    width: 100%;
+}
+
+
+.conteudo{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.filha{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+    color: white;
+}
+
+
+
+button{
+    border: none;
+    padding: 15px;
+    background-color: black;
+    font-size: 17px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: yellow;
+    border-radius: 15px;
+    border: 2px solid white;
+    position: relative;
+
+}
+
+.conteudo-principal{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+   
+}
+
+
+.bem-vindo{
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+}
+
+.reis{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    color: yellow;
+    font-size: 30px;
+    margin-top: -25px;
+}
+
+hr{
+    color: yellow;
+    width: 100%;
+}
+
+ins{
+    color: white;
+}
+
+.conheca{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+   padding: 20px;
+   
+}
+
+
+
+.conheca p{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+
+cortes-de-cabelo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+}
+
+ul, li{
+    color: white;
+    list-style: none;
+    display: flex;
+    object-fit: cover;
+    margin-left: 30px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    transition: transform 8.8s;
+}
+
+ 
+
+ul img:hover{
+    cursor: pointer;
+    transform: scale(1.1); 
+    filter: brightness(70%); 
+    transition: 0.9s;
+   
+}
+
+
+
+button a:hover::after {
+    width: 100%;
+  
+}
+
+button:hover{
+    color: white;
+}
+
+.renove {
+    position: relative; /* Defina position: relative apenas uma vez aqui */
+    display: inline-block; /* Isso garante que o efeito fique apenas sob o texto */
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: -30px;
+}
+
+.renove::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: yellow;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s ease-in-out; /* Adicionei a propriedade "transition" para criar uma transição suave */
+    border-radius: 15px;
+}
+
+.renove:hover::after {
+    width: 100%;
+}
+
+
+.renove {
+    position: relative; /* Defina position: relative apenas uma vez aqui */
+    display: inline-block; /* Isso garante que o efeito fique apenas sob o texto */
+    font-size: 45px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: -30px;
+}
+
+
+.conheca {
+    position: relative;
+    cursor: pointer;
+}
+
+.mensagem {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+}
+
+
+
+
+.card{
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    margin-top: 100px;
+    width: 100%;
+  }
+  
+  .imagem-reis {
+    width: 500px;
+    margin-right: 10px;
+    height: 90vh;
+    object-fit: cover;
+  }
+  
+  .content {
+    flex: 1; 
+  }
+  
+  .-de-cabel, img{
+    border: 3px solid white
+  }
+  
+  .conteudo-explicando {
+    color: white;
+    margin-top: 30px;
+  }
+
+  .um-pouco-sobre{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .valores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+    padding: 20px;
+  }
+
+  .valores1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: -10px;
+    margin-left: -30px;
+  }
+
+  .valores1 ul{
+    flex-direction: column;
+  }
+
+.label-menu,
+.checkbox{
+    display: none;
+}
+
+.clientes{
+    background-color: black;
+    padding: 50px;
+}
+
+.clientes h3{
+    display: flex;
+   text-align: center;
+    justify-content: center;
+}
+
+.fotter{
+padding: 50px;
+}
+
+i{
+    color: white;
+}
+  
+.checkbox {
+    display: none;
+}
+
+.google-maps{
+    background-color: black;
+    padding: 70px;
+}
+
+ h3{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    padding: 30px;
+}
+.hr-valores{
+    width: 50px;
+    color: yellow;
+    margin-top: -10px;
+   border: 1px solid yellow;
+}
+
+.hr-mapa{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: -30px;
+
+}
+
+
+
+@media (max-width: 1268px) {
+    .menu {
+        display: block;
+        position: absolute;
+        margin-left: auto;
+        top: 4.6875rem;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 100%;
+        height: 100vh;
+        visibility: hidden;
+        z-index: 1;
+        overflow-y: hidden;
+        transition: 0.5s;
+        
+    }
+    .menu a {
+        padding: 1rem 0;
+        margin-inline: 1rem;
+        border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
+        border-radius: 0;
+    }
+    .label-menu {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        gap: 0.5rem;
+        color: white;
+        padding-block: 1rem;
+        cursor: pointer;
+    }
+    .hamburguer {
+        border-top: 0.125rem solid;
+        width: 1.25rem;
+    }
+    .hamburguer::before,
+    .hamburguer::after {
+        content: " ";
+        display: block;
+        width: 1.25rem;
+        height: 0.125rem;
+        background: currentColor;
+        margin-top: 0.3125rem;
+        position: relative;
+        transition: 0.3s;
+    }
+    .checkbox:checked ~ .menu {
+        height: calc( 100vh - 4.6875rem);
+        visibility: visible;
+        overflow-y: auto;
+    }
+    .checkbox:checked ~ .label-menu .hamburguer {
+        border-top-color: transparent;
+    }
+    .checkbox:checked ~ .label-menu .hamburguer::before {
+        transform: rotate(135deg);
+    }
+    .checkbox:checked ~ .label-menu .hamburguer::after {
+        transform: rotate( -135deg);
+        top: -0.4375rem;
+    } .imagem-reis{
+        display: block;
+        object-fit: cover;
+    }
+    .conteudo-principal{
+        background-color: black;
+    }
+    ul, li{
+       flex-wrap: wrap;
+       display: flex;
+       justify-content: center;
+       width: 100%;
+       margin-right: 100px;
+    }
+
+    li img{
+        width: 400px;
+    }
+.valores1{
+    flex-wrap: wrap;
+} .google-maps{
+    padding: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+}.insta{
+    margin-left: -50px;
+} body {
+    background-position: center 200px; 
+    background-size: 30%;
+}
+
+
+
+
+
